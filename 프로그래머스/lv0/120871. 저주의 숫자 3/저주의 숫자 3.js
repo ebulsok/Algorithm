@@ -3,7 +3,6 @@ function solution(n) {
     for(let i = 2; i <= n; i++) {
         answer++;
         if(answer % 3 === 0 || (answer.toString().includes('3'))) answer = three(answer);
-        console.log(i, answer)
     }
     return answer;
 }
